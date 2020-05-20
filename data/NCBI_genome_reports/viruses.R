@@ -1,5 +1,7 @@
 #!/usr/bin/env Rscript
 
+## script author: Jakub J. Guzek (jakub.j.guzek@gmail.com)
+
 library('ggplot2')
 library('plyr')
 library('tidyr')
