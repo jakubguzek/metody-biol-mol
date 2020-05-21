@@ -69,6 +69,8 @@
 \hrule
 \end{strip}
 
+\textbf{Metody biologii molekularnej dominują badania w wielu dziedzinach nauk biologicznych. Wirusologia nie jest wyjątkiem, a można się nawet pokusić o stwierdzenie, że jej centrum zainteresowania są kluczowe zjawiska będące nierozerwalnie związane z tą dziedziną.}
+
 \section{Wstęp}
 
 Biologia molekularna jest jedną z najszybciej rozwijających się dziedzin wśród nauk biologicznych. Jej metody umożliwiają w dniu dzisiejszym sekwencjonowanie całych genomów -- co kiedyś było niemożliwe, lub pochłaniało ogromne zasoby zarówno pieniężne jak i czasowe -- w stosunkowo niedługim czasie. W rozwoju tych metod pomogły badania prowadzone na bardzo wielu, różnych organizmach i wirusach. Największy postęp przyniosły ogromne projekty takie jak \textbf{Projekt Poznania Genomu Człowieka} (\textit{Human Genome Project}) \autocite{IHGSC2001}, poznanie genomu neandertalczyka \autocite{Prufer2014}, czy projekt poznania genomu jęczmienia \autocite{IBGSC2012}.
@@ -135,17 +137,16 @@ Istnieje wiele metod nowej generacji jednak ich wspólną cechą jest etap pop
 	\item Ligacja końców fragmentów z adaptorami, czyli krótkimi dwuniciowymi kawałkami DNA, których sekwencje są komplementarne do oligonukleotywów związanych z mikromacierzą.
 	\item Wykorzystanie podłoża w postaci małych metalicznych kulek pokrytych białkiem streptawidyną. W tym wypadku fragmenty DNA ligowane są z adaptorami, które mają przyłączone na końcach 5' znaczniki w postaci biotyny, która może tworzyć silne wiązania ze streptowidyną.
 \end{itemize}
-Następnie unieruchomione fragmenty amplifikuje się wykorzystując PCR, co umożliwia wytworzenie wystarczającej ilości kopii do zsekwencjonowania \autocite{Godwin2016}\autocite{Brown2019}.
-
-Dalsze kroki różnią się znacząco w różnych metodach.
-
-\begin{figure*}[bp]
+\begin{figure*}[btp]
 	\begin{tcolorbox}
 		\centering
 		\includegraphics[width=\textwidth]{./figury/illumina.png}
 		\caption{\textbf{Sekwencjonowanie metodą cyklicznej odwracalnej terminacji}. Po amplifikacji fragmentów na macierzy, mieszanina starterów, i zmodyfikowanych nukleotydów jest dodana na macierz, wraz z polimerazą DNA. Każdy nukleotyd ma grupę blokującą przy 3' węglu deoksyrybozy (tutaj grupa 3'-O-metyloazydkowa) i jest oznaczony charakterystycznym dla siebie fluorochromem (F),  W czasie każdego cyklu fragmenty ulegną wydłużeniu o jeden nukleotyd. Wówczas detektor mierzy fluorescencję z każdego miejsca na macierzy, Na koniec fluorochrom i grupa blokująca są wycinane \autocite{Godwin2016}.}\label{fig::illumina}
 	\end{tcolorbox}
 \end{figure*}
+Następnie unieruchomione fragmenty amplifikuje się wykorzystując PCR, co umożliwia wytworzenie wystarczającej ilości kopii do zsekwencjonowania \autocite{Godwin2016}\autocite{Brown2019}.
+
+Dalsze kroki różnią się znacząco w różnych metodach.
 
 \textbf{Sekwencjonowanie metodą odwracalnej terminacji}, nazywana też sekwencjonowaniem w technologii Illumina (Rysunek \ref{fig::illumina}) wykorzystuje zmodyfikowane nukleotydy, które po dołączeniu przez polimerazę wydłużanego łańcucha powodują terminację. Metoda ta tym różni się jednak od metody F. Sangera, że tutaj terminacja jest odwracalna. Zaraz po odczytaniu na jakim nukleotydzie nastąpiła terminacja można z niego usunąć grupę blokującą, dołączoną do węgla 3' deoksyrybozy. Grupą blokującą może być znacznik fluorescencyjny, charakterystyczny dla danego nukleotydu. Mieszanina reakcyjna zawiera w wybranym momencie tylko zmodyfikowane nukleotydy, każdy krok syntezy powoduje więc terminację łańcucha. W każdym kroku detektor wykrywa znacznik fluorescencyjny i identyfikuje terminalny nukleotyd, Grupa blokująca jest następnie usuwana enzymatycznie. Metoda ta generuje odczyty o długości sekwencji do 300 bp. jednak dzięki wykorzystaniu macierzy masowo równoległej można uzyskać sekwencje o łącznej długości $20\,000$ Mb. \autocite{Godwin2016}.
 
